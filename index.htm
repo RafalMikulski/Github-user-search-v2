@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Github user search v2</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Github profile search</h1>
+
+        <!-- search bar -->
+        <div class="search-bar">
+            <input type="search" class="search-name" id="search-name" placeholder="Enter Github name..." required
+                minlength="2" maxlength="39" size="34">
+            <button id="submit"><img src="/images/search-icon.svg" class="submit-icon"></button>
+        </div>
+
+        <!-- display board -->
+        <div class="display-container">
+            <div class="profile-header-wraper">
+                <img class="avatar" id="avatar" src="/images/github-logo.svg">
+                <div class="data">
+                    <h3 id="name" class="name">x</h3>
+                    <p id="user" class="user">@</p>
+                    <p id="date" class="date">xxxx.xx.xx</p>
+                </div>
+            </div>
+            <p id="bio" class="bio">
+                <!-- do Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                  culpa sint aperiam vel libero mollitia iste? Velit suscipit quisquam,
+                  fuga explicabo autem cum quod iste, eos ipsum atque culpa! Recusandae! -->
+            </p>
+            <div class="profile-wraper">
+                <div class="stat-cel">
+                    <p class="title">Followers</p>
+                    <p id="followers" class="value">x</p>
+                </div>
+                <div class="stat-cel">
+                    <p class="title">Following</p>
+                    <p id="following" class="value">x</p>
+                </div>
+            </div>
+            <div class="profile-wraper">
+                <div class="stat-cel">
+                    <p class="title">Repos</p>
+                    <p id="repos" class="value">x</p>
+                </div>
+                <div class="stat-cel">
+                    <p class="title">Gists</p>
+                    <p id="gists" class="value">x</p>
+                </div>
+            </div>
+            <div class="profile-wraper">
+                <div class="stat-cel">
+                    <p class="title">Location</p>
+                    <p id="location" class="value">x</p>
+                </div>
+                <div class="stat-cel">
+                    <p class="title">Twitter</p>
+                    <p id="twitter" class="value">x</p>
+                </div>
+            </div>
+            <div class="profile-wraper">
+                <div class="stat-cel">
+                    <p class="title">Company</p>
+                    <p id="company" class="value">x</p>
+                </div>
+
+            </div>
+            <div class="profile-wraper">
+                <div class="stat-cel">
+                    <p class="title">Blog</p>
+                    <p id="blog" class="value">x</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>
