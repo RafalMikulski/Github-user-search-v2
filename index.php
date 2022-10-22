@@ -23,7 +23,7 @@
         <!-- display board -->
         <div class="display-container">
             <div class="profile-header-wraper">
-                <img class="avatar" id="avatar" src="images/github-logo.svg">
+                <img class="avatar" id="avatar" src="./images/github-logo.svg">
                 <div class="data">
                     <h3 id="name" class="name">x</h3>
                     <p id="user" class="user">@</p>
@@ -35,50 +35,26 @@
                   culpa sint aperiam vel libero mollitia iste? Velit suscipit quisquam,
                   fuga explicabo autem cum quod iste, eos ipsum atque culpa! Recusandae! -->
             </p>
-            <div class="profile-wraper">
-                <div class="stat-cel">
-                    <p class="title">Followers</p>
-                    <p id="followers" class="value">x</p>
-                </div>
-                <div class="stat-cel">
-                    <p class="title">Following</p>
-                    <p id="following" class="value">x</p>
-                </div>
-            </div>
-            <div class="profile-wraper">
-                <div class="stat-cel">
-                    <p class="title">Repos</p>
-                    <p id="repos" class="value">x</p>
-                </div>
-                <div class="stat-cel">
-                    <p class="title">Gists</p>
-                    <p id="gists" class="value">x</p>
-                </div>
-            </div>
-            <div class="profile-wraper">
-                <div class="stat-cel">
-                    <p class="title">Location</p>
-                    <p id="location" class="value">x</p>
-                </div>
-                <div class="stat-cel">
-                    <p class="title">Twitter</p>
-                    <p id="twitter" class="value">x</p>
-                </div>
-            </div>
-            <div class="profile-wraper">
-                <div class="stat-cel">
-                    <p class="title">Company</p>
-                    <p id="company" class="value">x</p>
-                </div>
+            <?php 
+                $rows = [
+                    ['Followers', 'Following'],
+                    ['Repos', 'Gists'],
+                    ['Location', 'Twitter'],
+                    ['Company'],
+                    ['Blog']
+                ];
 
-            </div>
+                foreach ( $rows as $row ):
+            ?>
             <div class="profile-wraper">
+                <?php foreach ( $row as $col ): ?>
                 <div class="stat-cel">
-                    <p class="title">Blog</p>
-                    <p id="blog" class="value">x</p>
+                    <p class="title"><?php echo $col; ?></p>
+                    <p id="<?= strtolower($col); ?>" class="value">x</p>
                 </div>
+                <?php endforeach; ?>
             </div>
-
+            <?php endforeach; ?>
         </div>
     </main>
 
