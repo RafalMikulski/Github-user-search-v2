@@ -1,9 +1,22 @@
-- 👋 Hi, I’m @RafalMikulski
-- 👀 I’m interested in web programming
-- 🌱 I’m currently learning JavaScript & PHP foundamentals.
-- 📫 Contact to me: rjmikulski.dev@gmail.com
+# Github user/profile search
 
-<!---
-RafalMikulski/RafalMikulski is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+< This is learning programming project.
+
+## Table of contents
+
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Setup](#setup)
+
+## General info
+
+## Technologies
+
+- HTML5
+- CSS3
+- JavaSCRIPT
+- Php
+
+## Setup
+
+To run this project on local machine you need a localserver, like XAMPP.
